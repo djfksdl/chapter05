@@ -10,7 +10,7 @@ public class Ex01 {
 
 	public static void main(String[] args) throws IOException {
 		
-		InputStream in = new FileInputStream("C:\\javaStudy\\img.jpg"); // 만들면 부모까지 알아서 끌고 옴. 섞어쓰기 시전. 디폴트 생성자가 없다. 나중에 추가하면 에러나니까 아예 안만들어줌 
+		InputStream in = new FileInputStream("C:\\javaStudy\\img.jpg"); // 만들면 부모까지 알아서 끌고 옴. 섞어쓰기 시전. ()안에 경로를 안쓰면 빨간줄이 뜨는걸 봐선 디폴트 생성자가 없다고 유추할수 있음
 		//이 위치에 없을 수있으니 예외처리해달라.try-cathcah를 사용해서. 일단 지금 메인이 아니라서 밖으로 던지기 'throws IOException'하면 빨간줄 없어짐
 		
 		OutputStream out = new FileOutputStream("C:\\javaStudy\\byteimg.jpg"); // 아직 존재하지않는것
