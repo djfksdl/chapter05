@@ -23,7 +23,7 @@ public class Ex03 {
 		System.out.println("복사 시작");
 		
 		while(true) {
-			int data = bin.read(); //in.read()라 하면 연결한 의미가 없음;;			
+			int data = bin.read(); //in.read()라 하면 연결한 의미가 없음-> 그냥 속도 느린 총을 그냥쓰는거임			
 			
 			if(data == -1) {
 				System.out.println("복사 끝");
