@@ -14,7 +14,8 @@ public class Ex04 {
 	public static void main(String[] args) throws IOException {
 		//in - 왼쪽 셋팅
 		InputStream in = new FileInputStream("C:\\javaStudy\\MS949.txt");
-		InputStreamReader isr = new InputStreamReader(in , "MS949"); //시작할떄 시작주소를 ()안에 줌 in. UTF-8은 번역 잘됨. 지금 txt파일은 ms949방식으로 저장을 해준거임.그래서 뒤에 ""는 MS949라는걸 알려주는것
+		InputStreamReader isr = new InputStreamReader(in , "MS949"); //시작할떄 시작주소를 (in)안에 줌. 지금 txt파일은 ms949방식으로 저장을 해준거임. 그래서 뒤에 ""는 MS949방식으로 저장되어있음을 알려주는것. 보조스트림은 섞어쓰기를 잘 안한다.
+		// 뭘로 만들어져있냐? MS949방식으로 저장을 시킨거임. 그 번역기를 써서 1010을 MS949방식으로 읽음. 
 		BufferedReader br = new BufferedReader(isr);
 		
 		//out - 오른쪽
